@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Web Pribadi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #fff4f7;
+    }
+
+    /* Hero / Opening */
+    .hero {
+      text-align: center;
+      padding: 100px 20px 50px;
+      background: linear-gradient(to right, #ff9a9e, #fad0c4);
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+    }
+
+    .hero a {
+      background-color: white;
+      color: #ff5e78;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: 0.3s ease;
+    }
+
+    .hero a:hover {
+      background-color: #ffe4ec;
+    }
+
+    nav {
+      background-color: white;
+      padding: 10px 30px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    nav a {
+      color: #ff5e78;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 20px;
+      background-color: white;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      display: none;
+    }
+
+    .section.active {
+      display: block;
+    }
+
+    .profile-pic {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #ffd6df;
+      margin-top: -50px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #ff5e78;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .about-text {
+      text-align: center;
+      padding: 10px 30px;
+      color: #333;
+    }
+
+    .contact-info {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .contact-info p {
+      margin: 5px 0;
+    }
+
+    .contact-info a {
+      color: #ff5e78;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #ffd1dc;
+      color: #444;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <div class="hero">
+    <h1>Hallo, Saya Karunia!!</h1>
+    <p>Selamat datang di web pribadi saya🤗✨</p>
+    <a href="#home" onclick="showSection('home')">Lihat Selengkapnya</a>
+  </div>
+
+  <!-- Navbar -->
+  <nav>
+    <a onclick="showSection('home')">Home</a>
+    <a onclick="showSection('education')">Education</a>
+    <a onclick="showSection('certificate')">Certificate</a>
+    <a onclick="showSection('skills')">Skills</a>
+    <a onclick="showSection('contact')">Contact</a>
+  </nav>
+
+  <!-- Home Section -->
+  <div id="home" class="section active">
+    <div style="text-align: center;">
+      <img src="jpg.1.png" alt="Foto Profil" class="profile-pic">
+    </div>
+    <h2>Tentang Saya</h2>
+    <p class="about-text">
+      Saya adalah siswi SMK jurusan Teknik Komputer dan Jaringan yang suka belajar hal baru, terutama di dunia teknologi dan desain web. Web ini saya buat sebagai salah satu cara mengekspresikan diri dan belajar membuat tampilan yang menarik.
+    </p>
+    
+  </div>
+
+ <!-- Education Section -->
+<div id="education" class="section">
+    <h2>Education</h2>
+    <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
+        <p class="about-text" style="flex: 1; text-align: justify;">
+        Saya belajar di SMKN 1 Nglegok jurusan Teknik Komputer dan Jaringan. Saat ini saya berada di kelas 2 dan sedang mempersiapkan diri untuk PKL. Selama di sekolah, saya mempelajari berbagai hal seperti instalasi jaringan, sistem operasi, pemrograman dasar, dan troubleshooting perangkat keras.
+        Selain pelajaran teknis, saya juga belajar mengembangkan soft skill seperti kerja sama tim, komunikasi yang baik, dan manajemen waktu. Saya sering memanfaatkan waktu di luar pelajaran untuk memperdalam materi melalui internet, mencoba membuat desain sederhana, dan belajar hal baru yang berkaitan dengan dunia teknologi.
+        Bagi saya, pendidikan adalah perjalanan untuk tumbuh dan berkembang, bukan hanya sekadar mencari nilai, tapi juga membentuk diri agar lebih siap menghadapi masa depan.
+      </p>
+      <img src="4.png" alt="Foto Pendidikan" style="width: 200px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+    </div>
+  </div>
+  
+
+  <!-- Certificate Section -->
+<div id="certificate" class="section">
+    <h2>Certificate</h2>
+    <p class="about-text">Beberapa sertifikat yang saya miliki antara lain:</p>
+    
+    <div style="text-align: center; margin-top: 20px;">
+      <img src="1.png" alt="Sertifikat Pelatihan Komputer" style="max-width: 50%; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin-bottom: 20px;">
+      <img src="2.png" alt="Sertifikat Jaringan" style="max-width: 50%; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin-bottom: 20px;">
+      <img src="3.png" alt="Sertifikat Jaringan" style="max-width: 50%; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin-bottom: 20px;">
+      <img src="6.png" alt="Sertifikat Jaringan" style="max-width: 50%; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin-bottom: 20px;">
+      <img src="7.png" alt="Sertifikat Jaringan" style="max-width: 50%; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin-bottom: 20px;">
+    </div>
+  </div>
+  
+
+  <!-- Skills Section -->
+<div id="skills" class="section">
+    <h2>Skills</h2>
+    <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
+      <img src="5.png" alt="Ilustrasi Skill" style="width: 250px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+      <div class="about-text" style="flex: 1; text-align: left;">
+        <p>Selama belajar di jurusan Teknik Komputer dan Jaringan, saya menguasai beberapa keahlian berikut:</p>
+
+        <strong> Linux:</strong>
+        <ul style="margin-top: 5px;">
+          <li>Basic Configurasi, SSH, Network Configuration</li>
+          <li>DNS Server Configurations</li>
+        </ul>
+
+        <strong>Mikrotik:</strong>
+        <ul style="margin-top: 5px;">
+          <li>Firewal, Bridge</li>
+          <li>Routing (Static, dynamic)</li>
+          <li>Hotspot, Wireles, Queues</li>
+        </ul>
+
+        <strong> Coding/Programing</strong>
+        <ul style="margin-top: 5px;">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- Contact Section -->
+  <div id="contact" class="section">
+    <h2>Contact</h2>
+    <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
+        <img src="8.jpg" alt="Foto Kontak" style="width: 150px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+        
+    <div class="about-text" style="flex: 1;">
+    <p >Ingin tahu lebih banyak atau bekerja sama? Hubungi saya melalui email atau Instagram ya!</p>
+
+    <div class="contact-info" style="margin-top: 15px !important;">
+      <p>Email: <a href="mailto:karunia.dwi704@smk.belajar.id">karunia.dwi704@smk.belajar.id</a></p>
+      <p>Instagram: <a href="https://www.instagram.com/karunia.id5?igsh=djNqMWx4c3EyM3Vs" target="_blank">https://www.instagram.com/karunia.id5?igsh=djNqMWx4c3EyM3Vs</a></p>
+    </div>
+    </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; Web Pribadi karuniaa
+  </footer>
+
+  <!-- JavaScript: Switch Sections -->
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(section => {
+        section.classList.remove('active');
+      });
+      document.getElementById(id).classList.add('active');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>
